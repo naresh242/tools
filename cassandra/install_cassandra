@@ -1,0 +1,12 @@
+how to install cassandra in windows:
+Download latest MSI file from: https://academy.datastax.com/planet-cassandra/cassandra
+
+if 32 bit windows: make sure Visual C++ 2008 runtime is available
+
+install Java 8
+ 
+<%cassandra Home%>\DataStax-DDC\apache-cassandra\bin cassandra -f
+ 
+add <%cassandra Home%>\DataStax-DDC\apache-cassandra\bin to PATH environmental variable 
+ 
+Open new cmd prompt. run cqlsh
