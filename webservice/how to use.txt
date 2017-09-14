@@ -1,0 +1,20 @@
+System requirements:
+anaconda (python 2.7)
+flask 
+pyspark
+
+location where code is placed in GCP:naresh.srikakulapu@35.184.80.99:~/work
+set variable JAVA_HOME="/home/naresh.srikakulapu/downloads/jdk1.8.0_131"
+
+how to use:
+2 services are created. one for training and second for recommendation
+
+training service:
+http://0.0.0.0:8000/train
+ json request {filename:"/home/naresh.srikakulapu/work/u.data"}
+pass file name to the train service. 
+
+test service:
+http://0.0.0.0:8000/test
+json request {userid:10}
+pass integer which refers user. it returns recommendation in the descending order
